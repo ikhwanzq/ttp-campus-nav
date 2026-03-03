@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, ActivityIndicator, Alert } from 'react-native';
 import MapView, { Marker, Polyline, MapPressEvent } from 'react-native-maps';
 
-const API_URL = 'https://superattainable-disposed-myung.ngrok-free.dev';
+const API_URL = 'https://ttp-campus-nav.onrender.com';
 
-// Add this to every fetch call to bypass ngrok's browser warning page
 const HEADERS = {
   'Content-Type': 'application/json',
-  'ngrok-skip-browser-warning': 'true',
 };
 
 type Coordinate = { latitude: number; longitude: number };
